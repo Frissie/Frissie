@@ -1,0 +1,105 @@
+#main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  margin-top: 5vh;
+  
+  #name{
+    @include inlineflex(center, center);
+    width: 100%;
+    height: 20%;
+
+    h1 {
+      font-size: 10rem;
+      font-family: 'Island Moments', cursive;
+
+    }
+  }
+
+  #jobs {  
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 50%;
+    height: 17vh;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    border-radius: 15px;
+    
+    ul {
+      list-style: none;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 20%;
+      height: 100%;
+      padding: 1% 0;
+    
+      li {
+        display: flex;
+        width: 80%;
+        height: 30px;
+        justify-content: flex-start;
+        align-items: center;
+        text-transform: uppercase;
+        padding-left: 5%;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 1rem;
+        
+        &.active {
+          text-decoration: underline;
+
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &::before{
+          content: "";
+          height: 0;
+          width: 0;
+          padding-left: 4px;
+          border-top: 5px solid transparent;
+          border-left: 5px solid silver;
+          border-bottom: 5px solid transparent;
+        }
+
+        +li{
+          margin-top: 1%;
+        }
+        
+        img {
+          width: 20px;
+          height: 20px;
+          padding-right: 2px;
+        }
+      }
+    }
+  }
+
+  #job_image {
+    margin-top: 1vh;
+    height: 50%;
+    width: 50%;
+    
+    li{
+      list-style: none;
+      
+      &.inactive {
+        display: none;
+      }
+      
+      img {
+        border-radius: 25px;
+        justify-self: center;
+        height: 100%;
+        width: 100%;
+
+      }
+    }
+  }
+}

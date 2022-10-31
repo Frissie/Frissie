@@ -1,0 +1,39 @@
+nav {
+  @include inlineflex(space-between, center);
+  width: 100vw;
+  height: 5vh;
+  position: absolute;
+  top: 0;
+  background-color: black;
+
+  ul {
+    @include inlineflex(flex-start, center);
+    margin-left: 15%;
+    width: 60%;
+
+    li {
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 1rem;
+      //background-color: rgba($color: #ffffff, $alpha: 0.8);
+
+      +li {
+        padding-left: 5%;
+      }
+    }
+  }
+
+  div {
+    @include inlineflex(flex-end, center);
+    margin-right: 20%;
+    
+    img {
+      @include cicle(40px);
+      margin-right: 5%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use "sass:math";
+
+@mixin inlineflex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin cicle($size) {
+  border-radius: math.div($size, 2);
+  height: $size;
+  width: $size;
+}

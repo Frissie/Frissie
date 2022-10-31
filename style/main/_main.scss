@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  cursor: default;
+
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-color: rgba($color: #000, $alpha: 0.8);
+
+}

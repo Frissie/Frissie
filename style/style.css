@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Shadows+Into+Light&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  cursor: default;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15%;
+  width: 60%;
+}
+nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+nav ul li + li {
+  padding-left: 5%;
+}
+nav div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20%;
+}
+nav div img {
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  margin-right: 5%;
+}
+nav div h2 {
+  font-size: 1.5rem;
+}
+
+#main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  margin-top: 5vh;
+}
+#main #name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+#main #name h1 {
+  font-size: 10rem;
+  font-family: "Island Moments", cursive;
+}
+#main #jobs {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
+  height: 17vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+#main #jobs ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  padding: 1% 0;
+}
+#main #jobs ul li {
+  display: flex;
+  width: 80%;
+  height: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 5%;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1rem;
+}
+#main #jobs ul li.active {
+  text-decoration: underline;
+}
+#main #jobs ul li:hover {
+  cursor: pointer;
+}
+#main #jobs ul li::before {
+  content: "";
+  height: 0;
+  width: 0;
+  padding-left: 4px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid silver;
+  border-bottom: 5px solid transparent;
+}
+#main #jobs ul li + li {
+  margin-top: 1%;
+}
+#main #jobs ul li img {
+  width: 20px;
+  height: 20px;
+  padding-right: 2px;
+}
+#main #job_image {
+  margin-top: 1vh;
+  height: 50%;
+  width: 50%;
+}
+#main #job_image li {
+  list-style: none;
+}
+#main #job_image li.inactive {
+  display: none;
+}
+#main #job_image li img {
+  border-radius: 25px;
+  justify-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+footer h3 {
+  font-size: 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: underline;
+}
+footer h3:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
