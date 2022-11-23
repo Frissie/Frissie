@@ -21,21 +21,19 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100vw;
   height: 5vh;
   position: absolute;
   top: 0;
   background-color: black;
+  display: flex;
 }
 nav ul {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
-  margin-left: 15%;
-  width: 60%;
+  width: 90%;
+  margin: auto;
 }
 nav ul li {
   list-style: none;
@@ -45,20 +43,20 @@ nav ul li {
 nav ul li + li {
   padding-left: 5%;
 }
-nav div {
+nav ul li div {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-right: 20%;
 }
-nav div img {
+nav ul li div img {
   border-radius: 20px;
   height: 40px;
   width: 40px;
   margin-right: 5%;
 }
-nav div h2 {
-  font-size: 1.5rem;
+nav ul li div h2 {
+  font-size: 1.2rem;
 }
 
 #main {
