@@ -2,9 +2,22 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 80vh;
+  height: 95vh;
   width: 100vw;
   margin-top: 5vh;
+
+
+  #landscape{
+    @include inlineflex(center, center);
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      font-size: 10rem;
+      font-family: 'Island Moments', cursive;
+
+    }
+  }
   
   #name{
     @include inlineflex(center, center);
