@@ -41,6 +41,11 @@ nav ul li {
   list-style: none;
   text-transform: uppercase;
   font-size: 1rem;
+  cursor: pointer;
+}
+nav ul li a {
+  cursor: inherit;
+  text-decoration: none;
 }
 nav ul li + li {
   padding-left: 5%;
@@ -59,6 +64,11 @@ nav div img {
 }
 nav div h2 {
   font-size: 1.5rem;
+  cursor: pointer;
+}
+nav div h2 a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 #main {
@@ -86,6 +96,7 @@ nav div h2 {
   justify-content: space-around;
   align-items: flex-start;
   width: 50%;
+  min-width: 800px;
   height: 17vh;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -138,6 +149,7 @@ nav div h2 {
   margin-top: 1vh;
   height: 50%;
   width: 50%;
+  min-width: 800px;
 }
 #main #job_image li {
   list-style: none;
