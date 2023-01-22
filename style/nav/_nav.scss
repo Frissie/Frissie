@@ -1,5 +1,4 @@
 nav {
-  @include inlineflex(space-between, center);
   width: 100vw;
   height: 5vh;
   position: absolute;
@@ -46,4 +45,5 @@ nav {
       }
     }
   }
+
 }
